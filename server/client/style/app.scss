@@ -5,7 +5,9 @@
 $font-stack:    'Open Sans', Helvetica, sans-serif;
 $primary-color: #333;
 
-$border: 1px solid #f0f4f7;
+$border: 		1px solid #f0f4f7;
+
+$green:			#62cb31;
 
 $sidebar-width: 200px;
 
@@ -73,10 +75,17 @@ body {
 	}
 }
 
-
 .profile {
 	padding: 20px 0;
 	margin: 0;
+}
+
+.profile-account {
+
+	.green {
+		color: $green;
+	}
+
 }
 
 .profile-sidebar {
