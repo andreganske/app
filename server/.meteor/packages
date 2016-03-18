@@ -21,3 +21,5 @@ simple:rest
 simple:rest-accounts-password
 accounts-password
 simple:json-routes
+fourseven:scss
+reywood:bootstrap3-sass

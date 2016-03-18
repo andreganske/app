@@ -1,0 +1,81 @@
+
+@import '{reywood:bootstrap3-sass}/bootstrap';
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+	font: 100% $font-stack;
+	font-size: 14px;
+	color: $primary-color;
+}
+
+.profile {
+	margin: 20px 0;
+}
+
+.profile-sidebar {
+	padding: 20px 0 10px 0;
+	background: #fff;
+}
+
+.profile-userpic img {
+	float: none;
+	margin: 0 auto;
+	width: 50%;
+	height: 50%;
+	-webkit-border-radius: 50% !important;
+	-moz-border-radius: 50% !important;
+	border-radius: 50% !important;
+}
+
+.profile-usertitle {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.profile-usertitle-name {
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.profile-usermenu {
+	
+	margin-top: 30px;
+	
+	ul li {
+		border-bottom: 1px solid #f0f4f7;
+
+		a {
+			color: #93a3b5;
+			font-size: 14px;
+			font-weight: 400;
+
+			i {
+				margin-right: 8px;
+				font-size: 14px;
+			}
+		}
+
+		a:hover {
+			background-color: #fafcfd;
+			color: #5b9bd1;
+		}
+	}
+
+	ul li:last-child {
+		border-bottom: none;
+	}
+
+	ul li.active {
+		border-bottom: none;
+	}
+}
+
+.profile-usermenu ul li.active a {
+	color: #5b9bd1;
+	background-color: #f6f9fb;
+	border-left: 2px solid #5b9bd1;
+	margin-left: -2px;
+}
