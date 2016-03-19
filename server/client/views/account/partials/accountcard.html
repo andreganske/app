@@ -1,35 +1,30 @@
 <template name="accountCard">
 
-	<div class="card">
-		<h4 class="text-center">HSBC</h4>
+	<div class="container-fluid card">
 		
-		<div class="saldo">
-			<h4>saldo: <span class="green"> + R$ 1200,00</span></h4>
+		<div class="header">
+			<h4>HSBC</h4>
+			<h4><strong class="green">+ R$ 1200,00</strong></h4>
 		</div>
 
-		<div class="movimentacoa">
-			<h5>Últimas movimentações:</h5>
-
+		<div class="detail">
 			<table class="table table-condensed table-striped">
 				<thead>
-					<td class="col-md-3"></td>
-					<td class="col-md-3"></td>
-					<td class="col-md-6"></td>
+					<tr>
+						<p>Últimas movimentações:</p>
+					</tr>
 				</thead>
 				<tr>
-					<td><p>12/03/2016</p></td>
-					<td><p>R$ -120,00</p></td>
-					<td><p>saque caixa eletronico</p></td>
+					<h4><strong>R$ -120,00</strong><h5 class="pull-right"><small>12/03/2016</small></h5></h4>
+					<p>saque caixa eletronico</p>
 				</tr>
 				<tr>
-					<td><p>10/03/2016</p></td>
-					<td><p>R$ -1200,00</p></td>
-					<td><p>pagamento da fatura do cartão</p></td>
+					<h4><strong>R$ -120,00</strong><h5 class="pull-right"><small>10/03/2016</small></h5></h4>
+					<p>pagamento da fatura do cartão</p>
 				</tr>
 				<tr>
-					<td><p>10/03/2016</p></td>
-					<td><p>R$ -120,00</p></td>
-					<td><p>pagamento conta de luz</p></td>
+					<h4><strong>R$ -120,00</strong><h5 class="pull-right"><small>09/03/2016</small></h5></h4>
+					<p>pagamento conta de luz</p>
 				</tr>
 			</table>
 		</div>

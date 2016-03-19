@@ -3,15 +3,22 @@
 
 .account-view {
 
-	margin: 20px;
-
 	.card {
-		background-color: $soft-green;
+		background-color: white;
 		border: $border;
-	}
 
-	.green {
-		color: $green;
-	}
+		.header {
 
+			margin: 20px 0;
+			
+		}
+
+		.detail {
+
+			tr {
+				border-bottom: $border;
+			}
+
+		}
+	}
 }
