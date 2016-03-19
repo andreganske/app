@@ -1,13 +1,15 @@
 
 @import '{reywood:bootstrap3-sass}/bootstrap';
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
 
 $font-stack:    'Open Sans', Helvetica, sans-serif;
 $primary-color: #333;
 
-$border: 		1px solid #f0f4f7;
+$border: 		1px solid #F0F4F7;
 
-$green:			#62cb31;
+$green:			#62CB31;
+$soft-green:	#E3F9DC;
+$soft-dark:		#F1F3F6;
 
 $sidebar-width: 200px;
 
@@ -23,6 +25,15 @@ body {
 	font-size: 14px;
 	color: $primary-color;
 	padding-top: 50px;
+
+	h1 h2 h3 h4 {
+		font-weight: 300;
+	}
+
+	h5 h6 {
+		font-weight: 600;
+	}
+
 }
 
 .menu {
@@ -33,6 +44,11 @@ body {
 	padding-right: 15px;
 }
 
+.navbar-header {
+	background-color: $soft-green;
+	padding-right: 21px;
+}
+
 .navbar-brand {
 	margin-right: 10px;
 }
@@ -40,7 +56,6 @@ body {
 .navbar-form {
 	margin-top: 0;
 	padding: 0;
-	margin-left: $sidebar-width;
 }
 
 .navbar-search {
@@ -63,7 +78,7 @@ body {
 @media (min-width: 768px) {
 	.sidebar {
 		position: fixed;
-		margin: 0 1px;
+		margin: 0;
 		top: 51px;
 		bottom: 0;
 		left: 0;
@@ -143,11 +158,42 @@ body {
 	ul li.active {
 		border-bottom: none;
 	}
+
+	ul li.active a {
+		color: #5b9bd1;
+		background-color: #f6f9fb;
+		border-left: 2px solid #5b9bd1;
+		margin-left: -2px;
+	}
+
 }
 
-.profile-usermenu ul li.active a {
-	color: #5b9bd1;
-	background-color: #f6f9fb;
-	border-left: 2px solid #5b9bd1;
-	margin-left: -2px;
+.main-content  {
+	background-color: $soft-dark;
+
+	position: fixed;
+	margin: 0;
+	top: 51px;
+	bottom: 0;
+	right: 0;
+	left: 200px;
+	z-index: 1000;
+	display: block;
+	overflow-x: hidden;
+	overflow-y: auto;
+	border-right: $border;
+}
+
+.account-view {
+
+	margin: 20px;
+
+	.card {
+		background-color: $soft-green;
+		border: $border;
+	}
+
+	.green {
+		color: $green;
+	}
 }
