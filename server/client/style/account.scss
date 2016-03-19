@@ -1,0 +1,17 @@
+
+@import 'app';
+
+.account-view {
+
+	margin: 20px;
+
+	.card {
+		background-color: $soft-green;
+		border: $border;
+	}
+
+	.green {
+		color: $green;
+	}
+
+}

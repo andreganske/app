@@ -1,0 +1,96 @@
+
+@import 'app';
+
+.menu {
+
+	border-bottom: $border;
+
+	.navbar-form {
+		margin: 0;
+		padding: 0;
+	}
+
+	.navbar-search {
+		height: 50px;
+		width: 20em;
+		border: none;
+		padding: 10px;
+		border-right: $border;
+		border-left: $border;
+	}
+}
+
+.profile {
+	
+	padding: 20px 0;
+	margin: 0;
+	border-right: $border;
+
+	.green {
+		color: $green;
+	}
+
+	.profile-sidebar {
+		padding: 20px 0 10px 0;
+		background: #fff;
+	}
+
+	.profile-userpic img {
+		float: none;
+		margin: 0 auto;
+		width: 50%;
+		height: 50%;
+		@include border-radius(50%);
+	}
+
+	.profile-usertitle {
+		text-align: center;
+		margin-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: $border;
+	}
+
+	.profile-usertitle-name {
+		margin-bottom: 10px;
+	}
+
+	.profile-usermenu {
+		
+		margin-top: 30px;
+		
+		ul li {
+			border-bottom: $border;
+
+			a {
+				color: #93a3b5;
+				font-size: 14px;
+				font-weight: 400;
+
+				i {
+					margin-right: 8px;
+					font-size: 14px;
+				}
+			}
+
+			a:hover {
+				background-color: #fafcfd;
+				color: #5b9bd1;
+			}
+		}
+
+		ul li:last-child {
+			border-bottom: none;
+		}
+
+		ul li.active {
+			border-bottom: none;
+		}
+
+		ul li.active a {
+			color: #5b9bd1;
+			background-color: #f6f9fb;
+			border-left: 2px solid #5b9bd1;
+			margin-left: -2px;
+		}
+	}
+}

@@ -5,53 +5,18 @@
 		<div class="row">		
 			<h2 class="text-center">Minhas contas</h2>
 			
-			<div class="col-md-4 card">
-				<h4 class="text-center">HSBC</h4>
-				
-				<div class="saldo">
-					<h4>saldo: <span class="green"> + R$ 1200,00</span></h4>
+			<div class="row">
+				<div class="col-md-4">
+					{{> accountCard}}
 				</div>
-
-				<div class="movimentacoa">
-					<h5>Últimas movimentações:</h5>
-					<p>12/03/2016 <strong>R$ -120,00</strong> saque caixa eletronico</p>
-					<p>10/03/2016 <strong>R$ -1200,00</strong> pagamento da fatura do cartão</p>
-					<p>09/03/2016 <strong>R$ -115,00</strong> pagamento conta de luz</p>
+				<div class="col-md-4">
+					{{> accountCard}}
+				</div>
+				<div class="col-md-4">
+					{{> accountCard}}
 				</div>
 			</div>
-
-			<div class="col-md-4 card">
-				<h4 class="text-center">Banco do Brasil</h4>
-				
-				<div class="saldo">
-					<h4>saldo: <span class="green"> + R$ 300,00</span></h4>
-				</div>
-
-				<div class="movimentacoa">
-					<h5>Últimas movimentações:</h5>
-					<p>12/03/2016 <strong>R$ -120,00</strong> saque caixa eletronico</p>
-					<p>10/03/2016 <strong>R$ -1200,00</strong> pagamento da fatura do cartão</p>
-					<p>09/03/2016 <strong>R$ -115,00</strong> pagamento conta de luz</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 card">
-				<h4 class="text-center">Itau</h4>
-				
-				<div class="saldo">
-					<h4>saldo: <span class="green"> + R$ 12000,00</span></h4>
-				</div>
-
-				<div class="movimentacoa">
-					<h5>Últimas movimentações:</h5>
-					<p>12/03/2016 <strong>R$ -120,00</strong> saque caixa eletronico</p>
-					<p>10/03/2016 <strong>R$ -1200,00</strong> pagamento da fatura do cartão</p>
-					<p>09/03/2016 <strong>R$ -115,00</strong> pagamento conta de luz</p>
-				</div>
-			</div>
-
 		</div>
 	</div>
-		
 
 </template>
